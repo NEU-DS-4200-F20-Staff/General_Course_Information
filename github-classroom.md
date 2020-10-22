@@ -1,8 +1,8 @@
-# GitHub Classroom instructions
+# GitHub Classroom instructions and policies
 
 Below are general instructions and policies that apply to each of your GitHub Classroom assignments for the course:
 
-- [GitHub Classroom instructions](#github-classroom-instructions)
+- [GitHub Classroom instructions and policies](#github-classroom-instructions-and-policies)
   - [Accepting an assignment](#accepting-an-assignment)
   - [Assignment instructions](#assignment-instructions)
   - [Invitation links vs. forking](#invitation-links-vs-forking)
@@ -28,7 +28,7 @@ Below are general instructions and policies that apply to each of your GitHub Cl
    
    * GitHub nicely displays this for you when you go to the repository online. Many text editors will also display previews for you. E.g., [Visual Studio Code](https://code.visualstudio.com/) has a nice [Markdown preview and extensions](https://code.visualstudio.com/docs/languages/markdown).
 
-   * **You are expected to follow the instructions exactly.** If you don't, you may miss out on the associated learning targets. Accepting assignments in varied forms also adds grading challenges and reduces the time we have for providing higher-level feedback on content to you and to other students. Permitting variances sets unrealistic expectations for you for future courses and for the real world where following seemingly pointless instructions often does in fact matter.
+   * **You are expected to follow the instructions exactly.** Please refer to the course syllabus for our expectations and reasoning behind this policy.
 
 ## Invitation links vs. forking
 

@@ -1,8 +1,8 @@
-# Altair Tips and Tricks
+# Altair tips, tricks, and troubleshooting
 
 Below are some additional info that can help with your Altair assignments:
 
-- [Altair Tips and Tricks](#altair-tips-and-tricks)
+- [Altair tips, tricks, and troubleshooting](#altair-tips-tricks-and-troubleshooting)
   - [Resources](#resources)
   - [Optional setup instructions for larger/longer projects](#optional-setup-instructions-for-largerlonger-projects)
     - [Set up git to automatically clear metadata using JQ](#set-up-git-to-automatically-clear-metadata-using-jq)
