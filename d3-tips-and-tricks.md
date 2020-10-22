@@ -1,0 +1,57 @@
+# D3 Tips and Tricks
+
+Below are some additional info that can help with your D3 assignments:
+
+- [D3 Tips and Tricks](#d3-tips-and-tricks)
+  - [Resources](#resources)
+  - [Function/method chaining](#functionmethod-chaining)
+  - [JS statements: `let` vs. `var` vs. `const`](#js-statements-let-vs-var-vs-const)
+  - [ES6 Arrow functions `=>`](#es6-arrow-functions-)
+
+## Resources
+
+**There are different versions of D3**, so make sure that the tutorials that you are using are up-to-date and use the same version we are (version 6). 
+
+* [D3 Homepage](https://d3js.org)
+* [D3 API Documentation](https://github.com/d3/d3/blob/master/API.md)
+* [D3 v6 examples on Observable](https://observablehq.com/@d3/gallery). Note that it is hard to copy whole examples from Observable.
+* [Breaking changes in D3v6](https://github.com/d3/d3/blob/master/CHANGES.md#user-content-breaking-changes)
+* [D3 Wiki Gallery](https://github.com/d3/d3/wiki/Gallery)
+* [D3 Wiki Tutorials](https://github.com/d3/d3/wiki/Tutorials)
+* [Tons of examples on bl.ocks.org](https://bl.ocks.org/). It is much easier to duplicate whole examples vs. Observable.
+* [D3 Tips and Tricks **v3.x (Warning: old version of D3)**](https://leanpub.com/D3-Tips-and-Tricks/read)
+
+## Function/method chaining
+
+D3, and this assignment, use [function chaining](https://en.wikipedia.org/wiki/Method_chaining) to apply several changes to the same visualization.
+
+You don't have to use chaining.
+E.g., instead of this:
+
+```js
+d3.select('body')
+  .append('p')
+    .text('Hello, world!');
+```
+
+you can write:
+
+```js
+let body = d3.select('body');
+let p = body.append('p');
+p.text('Hello, world!');
+```
+
+## JS statements: `let` vs. `var` vs. `const`
+
+To make our code more modular, reusable, and error-free we should limit variable scope to the relevant parts of the code.
+In part, we do this by using [`let` statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) instead of [`var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var) by default so as to not set global variables.
+We can also use [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) to create read-only references.
+
+## ES6 Arrow functions `=>`
+
+We can use [ES6 Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) to simplify our code.
+E.g., instead of writing `function(d){ return d.name; }` we write `d => d.name` or `d => { return d.name; }`. We would use the latter version with surrounding `{...}` when we need multiple lines of code vs. just a simple expression.
+
+Note that using the arrow functions we are not able to use `d3.select(this)` like you see in many esp. older D3 examples. Instead, in D3v6 you can now use `d3.select(event.currentTarget)`.
+See [this post](https://medium.com/@yonester/on-d3-and-arrow-functions-b6559c1cebb8) for an older discussion and [the D3v6 migration guide](https://observablehq.com/@d3/d3v6-migration-guide#events) for  this new approach.
