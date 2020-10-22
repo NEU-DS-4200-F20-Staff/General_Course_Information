@@ -2,7 +2,7 @@
 
 These are intended for instructors and teaching staff only.
 
-# Create Repo
+# Create repo
 
 1. Go to this year's staff GitHub organization. E.g., https://github.com/NEU-DS-4200-F20-Staff/
 
@@ -12,7 +12,7 @@ These are intended for instructors and teaching staff only.
 
 # Update the assignment
 
-1. Copy in the files from last year and make any necessary updates, *including assignment links to Canvas.* Previous years:
+1. Copy in the files from last year and make any necessary updates, *including assignment links to Canvas* and links at the bottom to course resources. Previous years:
 
     - https://github.com/NEU-DS-4200-F20-Staff ([Students](https://github.com/NEU-DS-4200-F20), [Classroom](https://classroom.github.com/classrooms/70919440-neu-ds-4200-f20))
     - https://github.com/NEU-CS-7250-S20-Staff ([Students](https://github.com/NEU-CS-7250-S20), [Classroom](https://classroom.github.com/classrooms/58606575-neu-cs-7250-s20))
@@ -30,7 +30,7 @@ These are intended for instructors and teaching staff only.
 
 1. Make the repository Public.
 
-# GitHub Pages (Web Development & D3 Only)
+# GitHub Pages (web development & D3 only)
 
 It is necessary if using GitHub Classroom to set up GitHub pages for the students, as they do not have admin permissions on their repository. To do this, we need to create and move everything to the `gh-pages` branch and delete the `master` branch.
 
@@ -53,7 +53,7 @@ It is necessary if using GitHub Classroom to set up GitHub pages for the student
     git push origin :master
     ```
 
-# Clear the Git Commit History
+# Clear the git commit history
 
 In order to make things as straightforward for the students as possible, we want to give them only a single commit to start with.
 
@@ -79,7 +79,7 @@ In order to make things as straightforward for the students as possible, we want
     git gc --aggressive --prune=all # remove the old files
     ```
 
-# Template Repository
+# Template repository
 
 1. On GitHub, go to `Settings` and check the box for `Template repository` at the top. This makes GitHub Classroom copies much faster.
 
